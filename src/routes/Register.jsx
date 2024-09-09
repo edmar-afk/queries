@@ -32,6 +32,7 @@ function Register() {
 		} else {
 			setCanSubmit(false);
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [fullName, email, password, password2, error]);
 
 	const handleSubmit = async (e) => {

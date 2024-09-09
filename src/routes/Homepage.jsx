@@ -1,4 +1,6 @@
-import { motion } from "framer-motion";import logo from "../assets/img/logo.jpg";import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import logo from "../assets/img/logo.jpg";
+import { Link } from "react-router-dom";
 function Homepage() {
 	// Variants for the animations
 	const scaleVariant = {
@@ -63,6 +65,8 @@ function Homepage() {
 						Sign in
 					</Link>
 				</motion.div>
+
+				<p className="mt-16 text-center mb-8">JHCSC @ {new Date().getFullYear()}</p>
 			</motion.div>
 		</>
 	);
