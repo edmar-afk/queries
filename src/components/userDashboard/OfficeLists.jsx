@@ -1,10 +1,9 @@
-import { motion } from "framer-motion";
-import officeData from "../../assets/data";
+import { motion } from "framer-motion";import data from "../../assets/data"; // Import the whole object and then access officeData
 
 function OfficeLists() {
 	return (
 		<>
-			{officeData.map((office, index) => (
+			{data.officeData.map((office, index) => (
 				<motion.div
 					key={office.id}
 					className="flex flex-col items-center mb-8"

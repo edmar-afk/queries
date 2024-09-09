@@ -6,7 +6,7 @@ function Offices() {
 				<p className="font-bold">Explore Our Offices</p>
 				<p className="text-xs font-extralight">For detailed information, browse the offices listed below.</p>
 			</div>
-			<div className="flex flex-row justify-evenly flex-wrap items-center">
+			<div className="flex flex-row justify-evenly flex-wrap items-center mb-24">
 				<OfficeLists />
 			</div>
 		</>

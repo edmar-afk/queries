@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 import Header from "../components/userDashboard/Header";
 import Search from "../components/userDashboard/Search";
 import Offices from "../components/userDashboard/Offices";
+import Fab from "../components/Fab";
 
 function UserDashboard() {
 	const [redirect, setRedirect] = useState(false);
@@ -22,7 +23,8 @@ function UserDashboard() {
 		<>
 			<Header />
 			<Search />
-			<Offices />
+            <Offices />
+            <Fab/>
 		</>
 	);
 }
