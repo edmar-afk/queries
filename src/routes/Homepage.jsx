@@ -13,7 +13,7 @@ function Homepage() {
 
 	return (
 		<>
-			<div className="flex flex-row items-center p-4 justify-between">
+			<div className="flex flex-row items-center p-4 justify-between pt-12">
 				<motion.p
 					className="text-2xl"
 					initial="hidden"
