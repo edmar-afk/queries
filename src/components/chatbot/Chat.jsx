@@ -8,7 +8,7 @@ function Chat() {
 			<div className="fixed bottom-0 w-[350px] left-0 right-0 flex rounded-2xl border-2 border-green-500 overflow-hidden mx-auto font-[sans-serif] my-4">
 				<input
 					type="email"
-					placeholder="Search Something..."
+					placeholder="Ask Something..."
 					className="w-full outline-none bg-white text-sm px-5 py-3"
 				/>
 				<button
