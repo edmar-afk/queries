@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Register from "./routes/Register";
 import NotFound from "./components/NotFound"
 import Homepage from "./routes/Homepage";
+import UserDashboard from "./routes/UserDashboard";
 
 
 function Logout() {
@@ -63,7 +64,10 @@ function App() {
 							path="/login"
 							element={<Login />}
 						/>
-						
+						<Route
+							path="/user-dashboard"
+							element={<UserDashboard />}
+						/>
 						<Route
 							path="*"
 							element={<NotFound />}
