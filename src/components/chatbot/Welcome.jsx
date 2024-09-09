@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities *//* eslint-disable react/prop-types */ function Welcome({ name }) {
 	return (
 		<>
-			<div className="flex flex-col p-4 mt-8">
+			<div className="flex flex-col p-4 mt-32">
 				<p className="font-extralight">
 					Welcome, <span className="font-bold">{name}</span>. How may I assist you today?
 				</p>
