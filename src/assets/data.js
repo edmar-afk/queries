@@ -1,4 +1,7 @@
-import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";const data = {
+import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";
+import registrarbg from "./img/schoolOffices/clinic.jpg";
+
+const data = {
 	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: logo },
 		{ id: 2, officeName: "Guidance ", officeImg: logo },
@@ -17,10 +20,48 @@ import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOff
 	],
 	offices: [
 		{
+			id: 3,
+			name: "JHCSC Registrar",
+			img: registrarbg,
+			incharge: "Adelina Mejoy",
+			position: "Registrar - Biswangan Campus",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			staffs: [
+				{
+					name: "Sample name sa staff 1",
+					role: "Assistant Librarian",
+				},
+				{
+					name: "Sample name sa staff 2",
+					role: "Library Aide",
+				},
+			],
+		},
+		{
 			id: 4,
 			name: "JHCSC Library",
 			img: librarybg,
 			incharge: "Melcie Francisco",
+			position: "Librarian - Biswangan Campus",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			staffs: [
+				{
+					name: "Sample name sa staff 1",
+					role: "Assistant Librarian",
+				},
+				{
+					name: "Sample name sa staff 2",
+					role: "Library Aide",
+				},
+			],
+		},
+		{
+			id: 5,
+			name: "JHCSC Clinic",
+			img: clinicbg,
+			incharge: "Anzeille Mae Miral",
 			position: "Librarian - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
