@@ -8,6 +8,7 @@ import Homepage from "./routes/Homepage";
 import UserDashboard from "./routes/UserDashboard";
 import Chatbot from "./routes/Chatbot";
 import Office from "./routes/Office";
+import Messages from "./routes/Messages";
 
 
 function Logout() {
@@ -73,6 +74,10 @@ function App() {
 						<Route
 							path="/chatbot"
 							element={<Chatbot />}
+						/>
+						<Route
+							path="/messages"
+							element={<Messages />}
 						/>
 						<Route
 							path="/user-dashboard/office/:officeId"
