@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";import data from "../../assets/data"; // Import the whole object and then access officeData
+import { motion } from "framer-motion"; import data from "../../assets/data";
+import { Link } from "react-router-dom";
 
 function OfficeLists() {
 	return (
@@ -15,13 +16,15 @@ function OfficeLists() {
 						damping: 10,
 						delay: index * 0.1, // Adding delay to each element
 					}}>
-					<div className="relative rounded-lg text-center text-white">
+					<Link
+						to={`/user-dashboard/office/${office.id}`}
+						className="relative rounded-lg text-center text-white">
 						<img
 							src={office.officeImg} // Use office.officeImg here
 							alt={office.officeName} // Add alt text for accessibility
 							className="w-24"
 						/>
-					</div>
+					</Link>
 					<p>{office.officeName}</p>
 				</motion.div>
 			))}

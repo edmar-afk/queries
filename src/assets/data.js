@@ -1,7 +1,4 @@
-import logo from "../assets/img/logo.jpg";
-
-
-const data = {
+import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";const data = {
 	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: logo },
 		{ id: 2, officeName: "Guidance ", officeImg: logo },
@@ -17,6 +14,27 @@ const data = {
 		{ id: 2, text: "How can I apply for a scholarship?" },
 		{ id: 3, text: "Where is the library located?" },
 		{ id: 4, text: "What services does the clinic offer?" },
+	],
+	offices: [
+		{
+			id: 4,
+			name: "JHCSC Library",
+			img: librarybg,
+			incharge: "Melcie Francisco",
+			position: "Librarian - Biswangan Campus",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			staffs: [
+				{
+					name: "Sample name sa staff 1",
+					role: "Assistant Librarian",
+				},
+				{
+					name: "Sample name sa staff 2",
+					role: "Library Aide",
+				},
+			],
+		},
 	],
 };
 

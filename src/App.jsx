@@ -7,6 +7,7 @@ import NotFound from "./components/NotFound"
 import Homepage from "./routes/Homepage";
 import UserDashboard from "./routes/UserDashboard";
 import Chatbot from "./routes/Chatbot";
+import Office from "./routes/Office";
 
 
 function Logout() {
@@ -72,6 +73,10 @@ function App() {
 						<Route
 							path="/chatbot"
 							element={<Chatbot />}
+						/>
+						<Route
+							path="/user-dashboard/office/:officeId"
+							element={<Office />}
 						/>
 						<Route
 							path="*"

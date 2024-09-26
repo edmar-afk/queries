@@ -23,16 +23,7 @@ function Homepage() {
 					variants={scaleVariant}>
 					From Queries to Solution
 				</motion.p>
-				<motion.div
-					initial={{ scale: 0 }}
-					animate={{ scale: 1, transition: { delay: 0.2, duration: 0.5 } }}
-					whileHover={{ scale: 1.1 }}>
-					<Link
-						to={"/login"}
-						className="bg-green-600 text-white py-1.5 px-4 rounded-lg">
-						Login
-					</Link>
-				</motion.div>
+				
 			</div>
 			<motion.div
 				className="flex flex-col"
