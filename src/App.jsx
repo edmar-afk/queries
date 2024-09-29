@@ -9,6 +9,8 @@ import UserDashboard from "./routes/UserDashboard";
 import Chatbot from "./routes/Chatbot";
 import Office from "./routes/Office";
 import Messages from "./routes/Messages";
+import Room from "./routes/Room";
+import Profile from "./routes/Profile";
 
 
 function Logout() {
@@ -80,8 +82,16 @@ function App() {
 							element={<Messages />}
 						/>
 						<Route
+							path="/room/:currentUserId/:userId"
+							element={<Room />}
+						/>
+						<Route
 							path="/user-dashboard/office/:officeId"
 							element={<Office />}
+						/>
+						<Route
+							path="/profile"
+							element={<Profile />}
 						/>
 						<Route
 							path="*"

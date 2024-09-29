@@ -1,11 +1,11 @@
 import Chat from "../components/chatbot/Chat";
-import Header from "../components/chatbot/Header";import Welcome from "../components/chatbot/Welcome";
+import Header from "../components/chatbot/Header";
 function Chatbot() {
-	const userData = JSON.parse(localStorage.getItem("userData")) || {};
+	
 	return (
 		<>
 			<Header />
-            <Welcome name={userData.first_name} />
+           
             <Chat/>
 		</>
 	);
