@@ -1,5 +1,4 @@
-import { Link, useParams } from "react-router-dom";import { useEffect } from "react"; // Import useEffect
-import data from "../assets/data";
+import { Link, useParams } from "react-router-dom";import { useEffect } from "react";import data from "../assets/data";
 import logo from "../assets/img/logo.jpg";
 import BottomNav from "../components/BottomNav";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
@@ -14,7 +13,7 @@ function Office() {
 
 	// Convert officeId to number for comparison
 	const office = data.offices.find((office) => office.id === parseInt(officeId));
-
+	const currentUser = JSON.parse(localStorage.getItem("userData")) || {};
 	// Scroll to top when the component loads
 	useEffect(() => {
 		window.scrollTo(0, 0); // Scroll to the top of the page
@@ -64,9 +63,11 @@ function Office() {
 									<p className="text-xs">{office.position}</p>
 								</div>
 							</div>
-							<div className="bg-green-600 p-2 rounded-full text-white shadow-lg">
+							<Link
+								to={`/room/${currentUser.id}/${office.contactId}`}
+								className="bg-green-600 p-2 rounded-full text-white shadow-lg">
 								<TextsmsOutlinedIcon />
-							</div>
+							</Link>
 						</div>
 
 						<OpeningHours

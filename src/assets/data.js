@@ -1,6 +1,4 @@
-import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";
-import registrarbg from "./img/schoolOffices/clinic.jpg";
-
+import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";
 const data = {
 	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: logo },
@@ -27,6 +25,7 @@ const data = {
 			position: "Registrar - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
+			contactId: 4,
 			staffs: [
 				{
 					name: "Sample name sa staff 1",
@@ -46,6 +45,7 @@ const data = {
 			position: "Librarian - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
+			contactId: 9,
 			staffs: [
 				{
 					name: "Sample name sa staff 1",
@@ -65,6 +65,7 @@ const data = {
 			position: "Librarian - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
+			contactId: 9,
 			staffs: [
 				{
 					name: "Sample name sa staff 1",
