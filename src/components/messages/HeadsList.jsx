@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";import AccountCircleIcon from "@mui/icons-material/AccountCircle";import api from "../../assets/api";
 import { Link } from "react-router-dom";
+import Loading from "../Loading";
 
 function HeadsList() {
 	const [heads, setHeads] = useState([]); // State to hold the list of superusers
@@ -33,7 +34,7 @@ function HeadsList() {
 						<div className="md:flex">
 							<div className="w-full p-4">
 								{loading ? (
-									<p>Loading heads...</p> // Show loading text while fetching data
+									<Loading/>
 								) : error ? (
 									<p className="text-red-500">{error}</p> // Show error message if any
 								) : (
