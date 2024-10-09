@@ -1,5 +1,4 @@
-import { Link, useParams } from "react-router-dom";import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { Link, useParams } from "react-router-dom";import { useEffect, useState } from "react";import { motion } from "framer-motion";
 import data from "../assets/data";
 import logo from "../assets/img/logo.jpg";
 import BottomNav from "../components/BottomNav";
@@ -39,7 +38,13 @@ function Office() {
 	}, []); // Empty dependency array to run only on component mount
 
 	if (!office) {
-		return <h2>Office not found</h2>;
+		return (
+			<div className="flex flex-col items-center justify-center h-screen">
+				<div className="text-center">Office not found</div>
+				<Link to={'/user-dashboard'} className="mt-6 font-bold text-green-800">Back</Link>
+			</div>
+		);
+
 	}
 
 	return (
