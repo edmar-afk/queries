@@ -1,4 +1,7 @@
-import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";
+import logo from "../assets/img/logo.jpg";
+import librarybg from "./img/schoolOffices/library.jpg";
+import clinicbg from "./img/schoolOffices/clinic.jpg";
+import registrarbg from "./img/schoolOffices/clinic.jpg";
 const data = {
 	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: logo },
@@ -22,6 +25,8 @@ const data = {
 			name: "JHCSC Registrar",
 			img: registrarbg,
 			incharge: "Adelina Mejoy",
+			mobileNum: "09655908879",
+			email: "adelinamejoy2019@gmail.com",
 			position: "Registrar - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
@@ -41,8 +46,10 @@ const data = {
 			id: 4,
 			name: "JHCSC Library",
 			img: librarybg,
-			incharge: "Melcie Francisco",
+			incharge: "Melcie S. Francisco",
 			position: "Librarian - Biswangan Campus",
+			mobileNum: "09515766554",
+			email: "Francisco.melcie10@gmail.com",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
 			contactId: 9,
@@ -63,6 +70,8 @@ const data = {
 			img: clinicbg,
 			incharge: "Anzeille Mae Miral",
 			position: "Librarian - Biswangan Campus",
+			mobileNum: "09452588312",
+			email: "patigayonmiralanzeillemae@gmail.com",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
 			contactId: 9,
