@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import logo from "../assets/img/logo.jpg";
+import { motion } from "framer-motion";import logo from "../assets/img/logo.jpg";
 import { Link } from "react-router-dom";
 function Homepage() {
 	// Variants for the animations
@@ -23,7 +22,6 @@ function Homepage() {
 					variants={scaleVariant}>
 					From Queries to Solution
 				</motion.p>
-				
 			</div>
 			<motion.div
 				className="flex flex-col"
@@ -42,8 +40,8 @@ function Homepage() {
 					className="mx-8 text-center"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.6 } }}>
-					Text text text text text text Text text text text text text Text text text text text text Text text text text
-					text text
+					JHCSC Student Services Support Chatbot is your friendly virtual assistant, ready to help you navigate the
+					world of student life at J.H. Cerilles State College.
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}

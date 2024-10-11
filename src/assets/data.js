@@ -1,6 +1,4 @@
-import logo from "../assets/img/logo.jpg";
-import librarybg from "./img/schoolOffices/library.jpg";
-import clinicbg from "./img/schoolOffices/clinic.jpg";
+import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";
 import registrarbg from "./img/schoolOffices/clinic.jpg";
 const data = {
 	officeData: [
@@ -11,15 +9,42 @@ const data = {
 		{ id: 5, officeName: "Clinic", officeImg: logo },
 		{ id: 6, officeName: "Scholarship", officeImg: logo },
 		{ id: 7, officeName: "Interfaith ", officeImg: logo },
-		{ id: 8, officeName: "Scholarship", officeImg: logo },
+		{ id: 8, officeName: "Services", officeImg: logo },
 	],
 	questions: [
-		{ id: 1, text: "What are the admission requirements?" },
-		{ id: 2, text: "How can I apply for a scholarship?" },
-		{ id: 3, text: "Where is the library located?" },
-		{ id: 4, text: "What services does the clinic offer?" },
+		{
+			id: 1,
+			text: "Is there any penalties if someone borrow books and return it for a very long time? If yes, what penalty is this?",
+		},
+		{ id: 2, text: "Do you give old books to the students? If yes, how can we ask for?" },
+		{ id: 3, text: "How long we can borrow the books?" },
+		{ id: 4, text: "Can we borrow those capstone books?" },
 	],
 	offices: [
+		{
+			id: 1,
+			name: "JHCSC Admission",
+			img: registrarbg,
+			incharge: "Shella Mae Parami",
+			mobileNum: "09123456789",
+			email: "nodata@gmail.com",
+			position: "Admission - Biswangan Campus",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			contactId: 4,
+		},
+		{
+			id: 2,
+			name: "JHCSC Guidance & Counseling",
+			img: registrarbg,
+			incharge: "Cristy Udjaji",
+			mobileNum: "09123456789",
+			email: "nodata@gmail.com",
+			position: "Guidance & Counseling - Biswangan Campus",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			contactId: 5,
+		},
 		{
 			id: 3,
 			name: "JHCSC Registrar",
@@ -30,17 +55,7 @@ const data = {
 			position: "Registrar - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
-			contactId: 4,
-			staffs: [
-				{
-					name: "Sample name sa staff 1",
-					role: "Assistant Librarian",
-				},
-				{
-					name: "Sample name sa staff 2",
-					role: "Library Aide",
-				},
-			],
+			contactId: 3,
 		},
 		{
 			id: 4,
@@ -52,17 +67,7 @@ const data = {
 			email: "Francisco.melcie10@gmail.com",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
-			contactId: 9,
-			staffs: [
-				{
-					name: "Sample name sa staff 1",
-					role: "Assistant Librarian",
-				},
-				{
-					name: "Sample name sa staff 2",
-					role: "Library Aide",
-				},
-			],
+			contactId: 6,
 		},
 		{
 			id: 5,
@@ -74,17 +79,43 @@ const data = {
 			email: "patigayonmiralanzeillemae@gmail.com",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
+			contactId: 7,
+		},
+		{
+			id: 6,
+			name: "JHCSC Scholarship",
+			img: clinicbg,
+			incharge: "Melanie Bucog",
+			position: "Scholarship - Biswangan Campus",
+			mobileNum: "09123456789",
+			email: "nodata@gmail.com",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			contactId: 8,
+		},
+		{
+			id: 7,
+			name: "JHCSC Interfaith Services",
+			img: clinicbg,
+			incharge: "Dennis Navas",
+			position: "Scholarship - Biswangan Campus",
+			mobileNum: "09123456789",
+			email: "nodata@gmail.com",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
 			contactId: 9,
-			staffs: [
-				{
-					name: "Sample name sa staff 1",
-					role: "Assistant Librarian",
-				},
-				{
-					name: "Sample name sa staff 2",
-					role: "Library Aide",
-				},
-			],
+		},
+		{
+			id: 8,
+			name: "JHCSC Services for Student with Special Needs and Person with Disabilities",
+			img: clinicbg,
+			incharge: "Cristy Udjaji",
+			position: "Services for student with special needs and person with disabilities - Biswangan Campus",
+			mobileNum: "09123456789",
+			email: "nodata@gmail.com",
+			opening: "7:00 A.M.",
+			closing: "5:00 P.M.",
+			contactId: 10,
 		},
 	],
 };

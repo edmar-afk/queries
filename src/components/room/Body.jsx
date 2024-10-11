@@ -1,4 +1,6 @@
-import Receiver from "./Receiver";import Sender from "./Sender";import api from "../../assets/api";
+/* eslint-disable react-hooks/exhaustive-deps */
+import Receiver from "./Receiver";import Sender from "./Sender";
+import api from "../../assets/api";
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react"; // Added useRef for scrolling
 
@@ -14,17 +16,24 @@ function Body() {
 		messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
 	};
 
+	const fetchMessages = async () => {
+		try {
+			const response = await api.get(`/api/chat-room/${currentUserId}/${userId}/`);
+			setMessages(response.data.messages);
+			scrollToBottom(); // Scroll after messages are fetched
+		} catch (error) {
+			console.error("Error fetching messages:", error);
+		}
+	};
+
+	// Fetch messages initially and set interval to refresh every 5 seconds
 	useEffect(() => {
-		const fetchMessages = async () => {
-			try {
-				const response = await api.get(`/api/chat-room/${currentUserId}/${userId}/`);
-				setMessages(response.data.messages);
-				scrollToBottom(); // Scroll after messages are fetched
-			} catch (error) {
-				console.error("Error fetching messages:", error);
-			}
-		};
-		fetchMessages();
+		fetchMessages(); // Initial fetch
+		const interval = setInterval(() => {
+			fetchMessages(); // Refresh messages every 5 seconds
+		}, 5000);
+
+		return () => clearInterval(interval); // Cleanup interval on unmount
 	}, [currentUserId, userId]);
 
 	useEffect(() => {
