@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import { useEffect, useState } from "react";import AccountCircleIcon from "@mui/icons-material/AccountCircle";import api from "../../assets/api";
-import { Link } from "react-router-dom";
+/* eslint-disable react/no-unescaped-entities */import { useEffect, useState } from "react";import AccountCircleIcon from "@mui/icons-material/AccountCircle";import api from "../../assets/api";import { Link } from "react-router-dom";
 import Loading from "../Loading";
 
 function UserLists() {
@@ -12,7 +10,7 @@ function UserLists() {
 	// Fetch data from the API
 	const fetchUsers = async () => {
 		try {
-			const response = await api.get(`/api/chat/rooms/`); // Fetch superusers from API
+			const response = await api.get(`/api/chat/rooms/`); 
       setHeads(response.data); // Set the fetched data to state
      
 		} catch (error) {
@@ -38,7 +36,7 @@ function UserLists() {
 						<div className="md:flex">
 							<div className="w-full p-4">
 								{loading ? (
-									<Loading/>
+									<Loading />
 								) : error ? (
 									<p className="text-red-500">{error}</p> // Show error message if any
 								) : (
@@ -49,7 +47,7 @@ function UserLists() {
 													key={head.id}
 													className="flex justify-between items-center bg-white mt-2 p-2 hover:shadow-lg rounded cursor-pointer transition">
 													<Link
-														to={`/room/${currentUser.id}/${head.id}`}
+														to={`/room/${currentUser.id}/${head.other_user.id}`} // Pass both current user ID and other user ID
 														className="flex ml-2">
 														<AccountCircleIcon
 															fontSize="large"
