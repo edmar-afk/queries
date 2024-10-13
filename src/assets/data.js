@@ -1,12 +1,4 @@
-import librarybg from "./img/schoolOffices/library.jpg";
-import clinicbg from "./img/schoolOffices/clinic.jpg";
-import registrarbg from "./img/schoolOffices/clinic.jpg";
-import admissionIcon from "../assets/img/officeBuildings/admission.png";
-import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";
-import registrarIcon from "../assets/img/officeBuildings/registrar.png";
-import libraryIcon from "../assets/img/officeBuildings/library.png";
-import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";
-import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
+import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
 import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
 import servicesIcon from "../assets/img/officeBuildings/services.png";
 const data = {
@@ -28,6 +20,10 @@ const data = {
 		{ id: 2, text: "Do you give old books to the students? If yes, how can we ask for?" },
 		{ id: 3, text: "How long we can borrow the books?" },
 		{ id: 4, text: "Can we borrow those capstone books?" },
+		{ id: 5, text: "What are the graduation requirements for my program, BSIT?" },
+		{ id: 6, text: "If one of my school records is missing, who’s responsible for it?" },
+		{ id: 7, text: "Is there any payment for getting a copy of my COE?" },
+		{ id: 8, text: "Male condoms are given freely, how about oral contraceptive pills?" },
 	],
 	offices: [
 		{
