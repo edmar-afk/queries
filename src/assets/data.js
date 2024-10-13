@@ -1,8 +1,4 @@
-import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
-import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
-import servicesIcon from "../assets/img/officeBuildings/services.png";
-const data = {
-	officeData: [
+import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";import servicesIcon from "../assets/img/officeBuildings/services.png";const data = {	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: admissionIcon },
 		{ id: 2, officeName: "Guidance ", officeImg: guidanceIcon },
 		{ id: 3, officeName: "Registrar", officeImg: registrarIcon },
@@ -18,8 +14,8 @@ const data = {
 			text: "Is there any penalties if someone borrow books and return it for a very long time? If yes, what penalty is this?",
 		},
 		{ id: 2, text: "Do you give old books to the students? If yes, how can we ask for?" },
-		{ id: 3, text: "How long we can borrow the books?" },
-		{ id: 4, text: "Can we borrow those capstone books?" },
+		{ id: 3, text: "What are the steps for freshmen to enroll in this institution?" },
+		{ id: 4, text: "How much our allowance in TES per year?" },
 		{ id: 5, text: "What are the graduation requirements for my program, BSIT?" },
 		{ id: 6, text: "If one of my school records is missing, who’s responsible for it?" },
 		{ id: 7, text: "Is there any payment for getting a copy of my COE?" },
@@ -31,8 +27,8 @@ const data = {
 			name: "JHCSC Admission",
 			img: registrarbg,
 			incharge: "Shella Mae Parami",
-			mobileNum: "09123456789",
-			email: "nodata@gmail.com",
+			mobileNum: "09514875930",
+			email: "shellamaeparami@gmail.com",
 			position: "Admission - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
@@ -92,8 +88,8 @@ const data = {
 			img: clinicbg,
 			incharge: "Melanie Bucog",
 			position: "Scholarship - Biswangan Campus",
-			mobileNum: "09123456789",
-			email: "nodata@gmail.com",
+			mobileNum: "09071715665",
+			email: "melaniebucog@gmail.com",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
 			contactId: 8,
