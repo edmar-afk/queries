@@ -22,7 +22,7 @@ function UserDashboard() {
 	return (
 		<>
 			<Header />
-			<Search />
+			{/* <Search /> */}
             <Offices />
             <BottomNav/>
 		</>

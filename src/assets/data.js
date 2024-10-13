@@ -1,15 +1,24 @@
-import logo from "../assets/img/logo.jpg";import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";
+import librarybg from "./img/schoolOffices/library.jpg";
+import clinicbg from "./img/schoolOffices/clinic.jpg";
 import registrarbg from "./img/schoolOffices/clinic.jpg";
+import admissionIcon from "../assets/img/officeBuildings/admission.png";
+import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";
+import registrarIcon from "../assets/img/officeBuildings/registrar.png";
+import libraryIcon from "../assets/img/officeBuildings/library.png";
+import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";
+import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
+import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
+import servicesIcon from "../assets/img/officeBuildings/services.png";
 const data = {
 	officeData: [
-		{ id: 1, officeName: "Admission", officeImg: logo },
-		{ id: 2, officeName: "Guidance ", officeImg: logo },
-		{ id: 3, officeName: "Registrar", officeImg: logo },
-		{ id: 4, officeName: "Library", officeImg: logo },
-		{ id: 5, officeName: "Clinic", officeImg: logo },
-		{ id: 6, officeName: "Scholarship", officeImg: logo },
-		{ id: 7, officeName: "Interfaith ", officeImg: logo },
-		{ id: 8, officeName: "Services", officeImg: logo },
+		{ id: 1, officeName: "Admission", officeImg: admissionIcon },
+		{ id: 2, officeName: "Guidance ", officeImg: guidanceIcon },
+		{ id: 3, officeName: "Registrar", officeImg: registrarIcon },
+		{ id: 4, officeName: "Library", officeImg: libraryIcon },
+		{ id: 5, officeName: "Clinic", officeImg: clinicIcon },
+		{ id: 6, officeName: "Scholarship", officeImg: scholarshipIcon },
+		{ id: 7, officeName: "Interfaith ", officeImg: interfaithIcon },
+		{ id: 8, officeName: "Services", officeImg: servicesIcon },
 	],
 	questions: [
 		{
