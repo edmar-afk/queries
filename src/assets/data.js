@@ -1,4 +1,12 @@
-import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";import servicesIcon from "../assets/img/officeBuildings/services.png";const data = {	officeData: [
+import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";
+import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";
+import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
+import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
+import servicesIcon from "../assets/img/officeBuildings/services.png";
+import admissionBg from '../assets/img/officeBuildings/admission.png';
+
+const data = {
+	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: admissionIcon },
 		{ id: 2, officeName: "Guidance ", officeImg: guidanceIcon },
 		{ id: 3, officeName: "Registrar", officeImg: registrarIcon },
@@ -25,7 +33,7 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 		{
 			id: 1,
 			name: "JHCSC Admission",
-			img: registrarbg,
+			img: admissionBg,
 			incharge: "Shella Mae Parami",
 			mobileNum: "09514875930",
 			email: "shellamaeparami@gmail.com",
@@ -37,10 +45,10 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 		{
 			id: 2,
 			name: "JHCSC Guidance & Counseling",
-			img: registrarbg,
+			img: admissionBg,
 			incharge: "Cristy Udjaji",
 			mobileNum: "09123456789",
-			email: "nodata@gmail.com",
+			email: "UdjajiCristy@gmail.com",
 			position: "Guidance & Counseling - Biswangan Campus",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
@@ -85,7 +93,7 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 		{
 			id: 6,
 			name: "JHCSC Scholarship",
-			img: clinicbg,
+			img: admissionBg,
 			incharge: "Melanie Bucog",
 			position: "Scholarship - Biswangan Campus",
 			mobileNum: "09071715665",
@@ -97,7 +105,7 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 		{
 			id: 7,
 			name: "JHCSC Interfaith Services",
-			img: clinicbg,
+			img: admissionBg,
 			incharge: "Dennis Navas",
 			position: "Scholarship - Biswangan Campus",
 			mobileNum: "09123456789",
@@ -109,7 +117,7 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 		{
 			id: 8,
 			name: "JHCSC Services for Student with Special Needs and Person with Disabilities",
-			img: clinicbg,
+			img: admissionBg,
 			incharge: "Cristy Udjaji",
 			position: "Services for student with special needs and person with disabilities - Biswangan Campus",
 			mobileNum: "09123456789",

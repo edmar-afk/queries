@@ -14,9 +14,9 @@ function Homepage() {
 
 	return (
 		<>
-			<div className="flex flex-row items-center p-4 justify-between pt-12">
+			<div className="flex flex-row items-center p-4 justify-center pt-12">
 				<motion.p
-					className="text-2xl"
+					className="text-2xl text-center font-bold"
 					initial="hidden"
 					animate="visible"
 					variants={scaleVariant}>
