@@ -1,9 +1,15 @@
-import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";
+import librarybg from "./img/schoolOffices/library.jpg";
+import clinicbg from "./img/schoolOffices/clinic.jpg";
+import registrarbg from "./img/schoolOffices/clinic.jpg";
+import admissionIcon from "../assets/img/officeBuildings/admission.png";
+import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";
+import registrarIcon from "../assets/img/officeBuildings/registrar.png";
+import libraryIcon from "../assets/img/officeBuildings/library.png";
 import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";
 import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
 import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
 import servicesIcon from "../assets/img/officeBuildings/services.png";
-import admissionBg from '../assets/img/officeBuildings/admission.png';
+import admissionBg from "../assets/img/schoolOffices/admission.jpeg";
 
 const data = {
 	officeData: [
