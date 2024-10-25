@@ -1,7 +1,4 @@
-import librarybg from "./img/schoolOffices/library.jpg";
-import clinicbg from "./img/schoolOffices/clinic.jpg";
-import registrarbg from "./img/schoolOffices/clinic.jpg";
-import admissionIcon from "../assets/img/officeBuildings/admission.png";
+import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";
 import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";
 import registrarIcon from "../assets/img/officeBuildings/registrar.png";
 import libraryIcon from "../assets/img/officeBuildings/library.png";
@@ -76,10 +73,10 @@ const data = {
 			id: 4,
 			name: "JHCSC Library",
 			img: librarybg,
-			incharge: "Melcie S. Francisco",
+			incharge: "Rialyn E. Calago, RL",
 			position: "Librarian - Biswangan Campus",
-			mobileNum: "09515766554",
-			email: "Francisco.melcie10@gmail.com",
+			mobileNum: "09855441788",
+			email: "calago.re@s.msumain.edu.ph",
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
 			contactId: 6,
