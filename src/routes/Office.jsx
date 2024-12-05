@@ -1,7 +1,4 @@
-import { Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import data from "../assets/data";
+import { Link, useParams } from "react-router-dom";import { useEffect, useState } from "react";import { motion } from "framer-motion";import data from "../assets/data";
 import logo from "../assets/img/logo.jpg";
 import BottomNav from "../components/BottomNav";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
@@ -10,7 +7,8 @@ import KeyboardReturnOutlinedIcon from "@mui/icons-material/KeyboardReturnOutlin
 import OpeningHours from "../components/Offices/OpeningHours";
 import Contact from "../components/Offices/Contact";
 import ScrollTop from "../components/Offices/ScrollTop";
-
+import chatbogImg from "../assets/svg/chatbot.svg";
+import officeBg from "../assets/img/officeBg.png";
 function Office() {
 	const { officeId } = useParams(); // Get the officeId from the URL
 
@@ -41,14 +39,33 @@ function Office() {
 			{/* First div to cover the screen */}
 			<div className="relative">
 				<img
-					src={office.img}
+					src={officeBg}
 					alt={office.name}
 					className="fixed w-full top-0 -z-50 h-full"
 				/>
+
+				<Link
+					to={`/chatbot/${officeId}`}
+					onClick={() => {
+						const currentOfficeName = localStorage.getItem("selectedOfficeName");
+						if (currentOfficeName !== office.name) {
+							localStorage.setItem("selectedOfficeName", office.name);
+						}
+					}}
+					className="w-72 shadow-xl fixed left-1/2 transform -translate-x-1/2 top-16 bg-green-800/50 backdrop-blur-lg rounded-xl p-6">
+					<img
+						src={chatbogImg}
+						alt=""
+					/>
+					<p className="text-white text-center font-bold">
+						Need help? Seek help to <span className="font-extralight text-green-900">{office.name}</span> Chatbot
+					</p>
+					<p className="text-xs font-extralight text-center text-white mt-2">Tap to proceed</p>
+				</Link>
 			</div>
 
 			{/* Second div hidden below the fold, requiring scroll */}
-			<div className="relative bg-gradient-to-b from-white from-60% pb-96 pt-14">
+			<div className="relative bg-gradient-to-b from-white from-50% pb-80 pt-14">
 				<div className="bg-white p-4">
 					<div className="flex flex-row items-center justify-between">
 						<div className="flex items-center">
@@ -76,11 +93,11 @@ function Office() {
 									<p className="text-xs">{office.position}</p>
 								</div>
 							</div>
-							<Link
+							{/* <Link
 								to={`/room/${currentUser.id}/${office.contactId}`}
 								className="bg-green-600 p-2 rounded-full text-white shadow-lg">
 								<TextsmsOutlinedIcon />
-							</Link>
+							</Link> */}
 						</div>
 
 						<OpeningHours
@@ -94,6 +111,7 @@ function Office() {
 					email={office.email}
 				/>
 			</div>
+
 			<ScrollTop />
 			<BottomNav />
 		</>

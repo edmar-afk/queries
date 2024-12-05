@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from "react";import Questions from "./Questions";import SendIcon from "@mui/icons-material/Send";
+import { useState, useRef, useEffect } from "react";import Questions from "./Questions";
+import SendIcon from "@mui/icons-material/Send";
 import InfoIcon from "@mui/icons-material/Info";
 import Sender from "../room/Sender";
 import Receiver from "../room/Receiver";
@@ -10,6 +11,7 @@ function Chat() {
 	const [chatHistory, setChatHistory] = useState([]); // State to hold the conversation history
 	const chatContainerRef = useRef(null); // Reference to the chat container
 	const userData = JSON.parse(localStorage.getItem("userData")) || {};
+	
 
 	// Handle form submission
 	const handleSubmit = async (e) => {

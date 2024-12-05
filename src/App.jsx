@@ -78,6 +78,10 @@ function App() {
 							element={<Chatbot />}
 						/>
 						<Route
+							path="/chatbot/:officeId"
+							element={<Chatbot />}
+						/>
+						<Route
 							path="/messages"
 							element={<Messages />}
 						/>

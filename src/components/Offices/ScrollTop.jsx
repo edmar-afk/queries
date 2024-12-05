@@ -34,7 +34,7 @@ function ScrollTop() {
 		<AnimatePresence>
 			{isVisible && (
 				<motion.div
-					className="fixed bottom-24 left-[45%] bg-green-600 text-white p-2 rounded-full cursor-pointer"
+					className="fixed bottom-20 left-[45%] bg-green-600 text-white p-2 rounded-full cursor-pointer"
 					onClick={handleScrollToTop}
 					initial={{ opacity: 0, scale: 0.5 }}
 					animate={{ opacity: 1, scale: 1, y: [10, 0], transition: { type: "spring", stiffness: 900, damping: 10 } }}
