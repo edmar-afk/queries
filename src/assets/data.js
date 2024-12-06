@@ -1,4 +1,17 @@
-import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";import servicesIcon from "../assets/img/officeBuildings/services.png";import admissionBg from "../assets/img/schoolOffices/admission.jpeg";const data = {	officeData: [
+import librarybg from "./img/schoolOffices/library.jpg";
+import clinicbg from "./img/schoolOffices/clinic.jpg";
+import registrarbg from "./img/schoolOffices/clinic.jpg";
+import admissionIcon from "../assets/img/officeBuildings/admission.png";
+import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";
+import registrarIcon from "../assets/img/officeBuildings/registrar.png";
+import libraryIcon from "../assets/img/officeBuildings/library.png";
+import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";
+import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
+import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
+import servicesIcon from "../assets/img/officeBuildings/services.png";
+import admissionBg from "../assets/img/schoolOffices/admission.jpeg";
+const data = {
+	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: admissionIcon },
 		{ id: 2, officeName: "Guidance ", officeImg: guidanceIcon },
 		{ id: 3, officeName: "Registrar", officeImg: registrarIcon },
@@ -46,7 +59,6 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 			officeId: 1,
 			officeName: "JHCSC Admission",
 			sets: [
-				{ question: "What are the specific requirement for my chosen program which is BSIT?" },
 				{ question: "When will be the deadline for the application and submission of requirements for freshmen?" },
 				{ question: "How do I track the status of my admission application?" },
 				{ question: "What are the steps for freshmen to enroll in this institution?" },

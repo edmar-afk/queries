@@ -23,7 +23,7 @@ function BottomNav() {
 							<HomeOutlinedIcon />
 							<span className="tab tab-home block text-xs">Home</span>
 						</NavLink>
-						<NavLink
+						{/* <NavLink
 							to="/chatbot"
 							className={({ isActive }) =>
 								`w-full justify-center inline-block text-center pt-2 pb-1 ${
@@ -32,7 +32,7 @@ function BottomNav() {
 							}>
 							<ThreePOutlinedIcon />
 							<span className="tab tab-kategori block text-xs">Chatbot</span>
-						</NavLink>
+						</NavLink> */}
 						<NavLink
 							to="/messages"
 							className={({ isActive }) =>
