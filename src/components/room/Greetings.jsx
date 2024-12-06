@@ -50,7 +50,7 @@ const OfficeDetails = () => {
 								I’m <b>{office.incharge}</b> from <b>{office.name}</b> office, and I’m here to help you!
 							</p>
 							<p
-								className="text-right cursor-pointer"
+								className="absolute right-4 bottom-4 cursor-pointer py-0.5 px-4 rounded-md mt-4 bg-red-900 w-fit"
 								onClick={() => setIsVisible(false)} // Hide component on click
 							>
 								Close
