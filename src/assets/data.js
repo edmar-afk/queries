@@ -122,7 +122,7 @@ const data = {
 		{
 			id: 5,
 			officeId: 2,
-			officeName: "JHCSC Guidance and Counseling",
+			officeName: "JHCSC Guidance & Counseling",
 			sets: [
 				{ question: "How can I handle academic stress and pressure?" },
 				{ question: "Are there any group of counseling sessions available? If yes, how to set an appointment?" },
