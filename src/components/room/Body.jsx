@@ -3,7 +3,7 @@ import Receiver from "./Receiver";import Sender from "./Sender";
 import api from "../../assets/api";
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react"; // Added useRef for scrolling
-
+import Greetings from '../room/Greetings';
 function Body() {
 	const { currentUserId, userId } = useParams();
 	const [message, setMessage] = useState("");
@@ -67,6 +67,7 @@ function Body() {
 	return (
 		<>
 			<main className="flex flex-col pt-24 h-screen">
+				<Greetings/>
 				<section className="container mx-auto p-4 pb-24">
 					{/* Display messages in a conversation-like format */}
 					{messages.map((message) =>
