@@ -1,5 +1,4 @@
-import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";import servicesIcon from "../assets/img/officeBuildings/services.png";import admissionBg from "../assets/img/schoolOffices/admission.jpeg";const data = {
-	officeData: [
+import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";import admissionIcon from "../assets/img/officeBuildings/admission.png";import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";import registrarIcon from "../assets/img/officeBuildings/registrar.png";import libraryIcon from "../assets/img/officeBuildings/library.png";import clinicIcon from "../assets/img/officeBuildings/clinic.jpg";import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";import servicesIcon from "../assets/img/officeBuildings/services.png";import admissionBg from "../assets/img/schoolOffices/admission.jpeg";const data = {	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: admissionIcon },
 		{ id: 2, officeName: "Guidance ", officeImg: guidanceIcon },
 		{ id: 3, officeName: "Registrar", officeImg: registrarIcon },
@@ -312,6 +311,14 @@ import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./
 			opening: "7:00 A.M.",
 			closing: "5:00 P.M.",
 			contactId: 6,
+			staffs: [
+				{
+					name: "Disie Joy Reutotar",
+					position: "Librarian - Poblacion Campus",
+					number: "09459808592",
+					email: "Retuatotardesie@gmail.com",
+				},
+			],
 		},
 		{
 			id: 5,

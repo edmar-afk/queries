@@ -1,6 +1,4 @@
-import { Link, useParams } from "react-router-dom";import { useEffect, useState } from "react";import { motion } from "framer-motion";import data from "../assets/data";
-import logo from "../assets/img/logo.jpg";
-import BottomNav from "../components/BottomNav";
+import { Link, useParams } from "react-router-dom";import { useEffect, useState } from "react";import { motion } from "framer-motion";import data from "../assets/data";import logo from "../assets/img/logo.jpg";import BottomNav from "../components/BottomNav";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import KeyboardReturnOutlinedIcon from "@mui/icons-material/KeyboardReturnOutlined";
@@ -106,6 +104,32 @@ function Office() {
 						/>
 					</div>
 				</div>
+				{/* Conditional rendering for staffs */}
+				{office.staffs && office.staffs.length > 0 && (
+					<div className="bg-white p-4 mt-4">
+						<h3 className="font-extralight text-lg">Staff Members</h3>
+						<ul className="mt-2 space-y-2">
+							{office.staffs.map((staff, index) => (
+								<li
+									key={index}
+									className="border-b pb-2 bg-green-50 p-2 rounded-lg shadow-sm">
+									<p className="font-semibold text-md">{staff.name}</p>
+									<p className="text-sm text-gray-700">
+										<b className="mr-2">Position:</b> {staff.position}
+									</p>
+									<p className="text-sm text-gray-700">
+										<b className="mr-2">Mobile Number:</b>
+										{staff.number}
+									</p>
+									<p className="text-sm text-gray-700">
+										<b className="mr-2">Email:</b>
+										{staff.email}
+									</p>
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
 				<Contact
 					mobileNum={office.mobileNum}
 					email={office.email}
