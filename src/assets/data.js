@@ -18,7 +18,7 @@ const data = {
 		{ id: 5, officeName: "Clinic", officeImg: clinicIcon },
 		{ id: 6, officeName: "Scholarship", officeImg: scholarshipIcon },
 		{ id: 7, officeName: "Interfaith ", officeImg: interfaithIcon },
-		{ id: 8, officeName: "Services", officeImg: servicesIcon },
+		{ id: 8, officeName: "PWDs", officeImg: servicesIcon },
 		{ id: 9, officeName: "DSA", officeImg: dsabg },
 	],
 	questions: [
@@ -176,7 +176,7 @@ const data = {
 		{
 			id: 7,
 			officeId: 8,
-			officeName: "JHCSC Services for Student with Special Needs and Person with Disabilities",
+			officeName: "JHCSC PWDs",
 			sets: [
 				{
 					question: "Are there any available mobility devices that they can use wile at school?",
@@ -369,10 +369,10 @@ const data = {
 		},
 		{
 			id: 8,
-			name: "JHCSC Services for Student with Special Needs and Person with Disabilities",
+			name: "JHCSC PWDs",
 			img: admissionBg,
 			incharge: "Cristy Udjaji",
-			position: "Services for student with special needs and person with disabilities - Biswangan Campus",
+			position: "PWDs - Biswangan Campus",
 			mobileNum: "09123456789",
 			email: "UdjajiCristy@gmail.com",
 			opening: "7:00 A.M.",
