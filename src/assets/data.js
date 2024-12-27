@@ -1,6 +1,4 @@
-import librarybg from "./img/schoolOffices/library.jpg";
-import clinicbg from "./img/schoolOffices/clinic.jpg";
-import registrarbg from "./img/schoolOffices/clinic.jpg";
+import librarybg from "./img/schoolOffices/library.jpg";import clinicbg from "./img/schoolOffices/clinic.jpg";import registrarbg from "./img/schoolOffices/clinic.jpg";
 import admissionIcon from "../assets/img/officeBuildings/admission.png";
 import guidanceIcon from "../assets/img/officeBuildings/guidance.jpg";
 import registrarIcon from "../assets/img/officeBuildings/registrar.png";
@@ -10,6 +8,7 @@ import scholarshipIcon from "../assets/img/officeBuildings/scholarship.png";
 import interfaithIcon from "../assets/img/officeBuildings/interfaith.jpg";
 import servicesIcon from "../assets/img/officeBuildings/services.png";
 import admissionBg from "../assets/img/schoolOffices/admission.jpeg";
+import dsabg from "../assets/img/schoolOffices/dsa.png";
 const data = {
 	officeData: [
 		{ id: 1, officeName: "Admission", officeImg: admissionIcon },
@@ -20,7 +19,7 @@ const data = {
 		{ id: 6, officeName: "Scholarship", officeImg: scholarshipIcon },
 		{ id: 7, officeName: "Interfaith ", officeImg: interfaithIcon },
 		{ id: 8, officeName: "Services", officeImg: servicesIcon },
-		{ id: 9, officeName: "DSA", officeImg: servicesIcon },
+		{ id: 9, officeName: "DSA", officeImg: dsabg },
 	],
 	questions: [
 		{
@@ -383,7 +382,7 @@ const data = {
 		{
 			id: 9,
 			name: "DSA",
-			img: admissionBg,
+			img: dsabg,
 			incharge: "Kleener Joy Pates",
 			position: "DSA",
 			mobileNum: "09094975147",
